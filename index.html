@@ -12,14 +12,14 @@
     />
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="bg-dark">
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
     </div>
     <div class="jumbotron">
-        <h1>The Truth Is Out There</h1>
+        <h1 class="display-4">The Truth Is Out There</h1>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -35,22 +35,216 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3">
-                <form>
+            <div class="col-md-4">
+                <form class="bg-dark">
                     <p>Filter Search</p>
-                    <ul class="list-group">
-                        <li class="list-group-item">
+                    <ul class="bg-dark list-group">
+                        <li class="bg-dark list-group-item">
                             <label for="date">Enter Date</label>
-                            <input type="text" placeholder="1/10/2010" id="datetime"/>
+                            <input type="text" placeholder="1/10/2010" id="datetime" />
                         </li>
-                        <li class="list-group-item">
-                            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                        <li class="bg-dark list-group-item">
+                            <label for="city">Enter City</label>
+                            <select id="city">
+                                <option value=""></option>
+                                <option value="albuquerque">Albuquerque</option>
+                                <option value="benton">Benton</option>
+                                <option value="bonita">Bonita</option>
+                                <option value="el cajon">El cajon</option>
+                                <option value="fresno">Fresno</option>
+                                <option value="grants pass">Grants pass</option>
+                                <option value="la mesa">La mesa</option>
+                                <option value="lemon grove">Lemon Grove</option>
+                                <option value="maricopa">Maricopa</option>
+                                <option value="park city">Park City</option>
+                                <option value="st. louis">St. louis</option>
+                                <option value="spring valley">Spring Valley</option>
+                                <option value="willow">Willow</option>
+                                <option value="antioch">Antioch</option>
+                                <option value="naples">Naples</option>
+                                <option value="anchorage">Anchorage</option>
+                                <option value="national city">National City</option>
+                                <option value="boca raton">Boca raton</option>
+                                <option value="falcon">Falcon</option>
+                                <option value="crestview">Crestview</option>
+                                <option value="aspen">Aspen</option>
+                                <option value="walworth">Walworth</option>
+                                <option value="baker">Baker</option>
+                                <option value="pasadena">Pasadena</option>
+                                <option value="san diego">Dan diego</option>
+                                <option value="haverhill">Haverhill</option>
+                                <option value="jasper">Jasper</option>
+                                <option value="bakersfield">Bakersfield</option>
+                                <option value="orange">Orange</option>
+                                <option value="phoenix">Phoenix</option>
+                                <option value="middleburg">Middleburg</option>
+                                <option value="sacramento">Sacramento</option>
+                                <option value="waxhaw">Waxhaw</option>
+                                <option value="madison">Madison</option>
+                                <option value="loveland">Loveland</option>
+                                <option value="atlanta">Atlanta</option>
+                                <option value="mason">Mason</option>
+                                <option value="glen spey">Glen spey</option>
+                                <option value="reedville">Reedville</option>
+                                <option value="cleveland">Cleveland</option>
+                                <option value="whittier">Whittier</option>
+                                <option value="ben wheeler">Ben wheeler</option>
+                                <option value="san pablo">San pablo</option>
+                                <option value="cedar rapids">Cedar rapids</option>
+                                <option value="princeton">Princeton</option>
+                                <option value="chula vista">Chula vista</option>
+                                <option value="colonia">Colonia</option>
+                                <option value="clinton">Clinton</option>
+                                <option value="new paltz">New paltz</option>
+                                <option value="anderson">Anderson</option>
+                                <option value="pacific palisades">Pacific palisades</option>
+                                <option value="searcy">Searcy</option>
+                                <option value="southampton">Southampton</option>
+                                <option value="mansfield">Mansfield</option>
+                                <option value="edgartown">Edgartown</option>
+                                <option value="windham">Windham</option>
+                                <option value="west boylston">West boylston</option>
+                                <option value="fort worth">Fort worth</option>
+                                <option value="tomball">Tomball</option>
+                                <option value="port saint lucie">Port saint lucie</option>
+                                <option value="boulder">Boulder</option>
+                                <option value="london (canada)">London (canada)</option>
+                                <option value="cleveland">Cleveland</option>
+                                <option value="francis creek">Francis creek</option>
+                                <option value="woodbridge">Woodbridge</option>
+                                <option value="seattle">Seattle</option>
+                                <option value="freedom (watsonville)">Freedom (watsonville)</option>
+                                <option value="santa fe springs">Santa fe springs</option>
+                                <option value="saline">Saline</option>
+                                <option value="buffalo">Buffalo</option>
+                                <option value="cincinnati">Cincinnati</option>
+                                <option value="paducah">Paducah</option>
+                                <option value="uxbridge">Uxbridge</option>
+                                <option value="round rock">Round Rock</option>
+                                <option value="san jacinto">San jacinto</option>
+                                <option value="norton">Norton</option>
+                                <option value="hancock">Hancock</option>
+                                <option value="cary">Cary</option>
+                                <option value="tularosa">Tularosa</option>
+                                <option value="eunice">Eunice</option>
+                                <option value="butler">Butler</option>
+                                <option value="lompoc">Lompoc</option>
+                                <option value="pratt">Pratt</option>
+                                <option value="taunton">Taunton</option>
+                                <option value="lakeland">Lakeland</option>
+                                <option value="fort myers">Fort Myers</option>
+                                <option value="fairfield">Fairfield</option>
+                                <option value="joplin">Joplin</option>
+                                <option value="leatherwood">Leatherwood</option>
+                                <option value="ingleside (canada)">Ingleside (canada)</option>
+                                <option value="fayetteville">Fayetteville</option>
+                                <option value="eugene">Eugene</option>
+                                <option value="springfield">Springfield</option>
+                                <option value="alma">Alma</option>
+                                <option value="wichita">Wichita</option>
+                                <option value="deep run">Deep run</option>
+                                <option value="waukesha">Waukesha</option>
+                                <option value="ceres">Ceres</option>
+                                <option value="white oak">White Oak</option>
+                                <option value="ackerman">Ackerman</option>
+                                <option value="gulf breeze">Gulf Breeze</option>
+                            </select>
+                        </li>
+                        <li class="bg-dark list-group-item">
+                            <label for="state">Enter State</label>
+                            <select id="state">
+                                <option value=""></option>
+                                <option value="al">AL</option>
+                                <option value="ak">AK</option>
+                                <option value="az">AZ</option>
+                                <option value="ar">AR</option>
+                                <option value="ca">CA</option>
+                                <option value="co">CO</option>
+                                <option value="ct">CT</option>
+                                <option value="de">DE</option>
+                                <option value="fl">FL</option>
+                                <option value="ga">GA</option>
+                                <option value="hi">HI</option>
+                                <option value="id">ID</option>
+                                <option value="il">IL</option>
+                                <option value="in">IN</option>
+                                <option value="ia">IA</option>
+                                <option value="ks">KS</option>
+                                <option value="ky">KY</option>
+                                <option value="la">LA</option>
+                                <option value="me">ME</option>
+                                <option value="md">MD</option>
+                                <option value="ma">MA</option>
+                                <option value="mi">MI</option>
+                                <option value="mn">MN</option>
+                                <option value="ms">MS</option>
+                                <option value="mo">MO</option>
+                                <option value="mt">MT</option>
+                                <option value="ne">NE</option>
+                                <option value="nv">NV</option>
+                                <option value="nh">NH</option>
+                                <option value="nj">NJ</option>
+                                <option value="nm">NM</option>
+                                <option value="ny">NY</option>
+                                <option value="nc">NC</option>
+                                <option value="nd">ND</option>
+                                <option value="oh">OH</option>
+                                <option value="ok">OK</option>
+                                <option value="or">OR</option>
+                                <option value="pa">PA</option>
+                                <option value="ri">RI</option>
+                                <option value="sc">SC</option>
+                                <option value="sd">SD</option>
+                                <option value="tn">TN</option>
+                                <option value="tx">TX</option>
+                                <option value="ut">UT</option>
+                                <option value="vt">VT</option>
+                                <option value="va">VA</option>
+                                <option value="wa">WA</option>
+                                <option value="wv">WV</option>
+                                <option value="wi">WI</option>
+                                <option value="wy">WY</option>
+                                <option value="on">ON(canada)</option>                   
+                            </select>
+                        </li> 
+                        <li class="bg-dark list-group-item">
+                            <label for="country">Enter Country</label>
+                            <select id="country">
+                                <option value=""></option>
+                                <option value="canada">Canada</option>  
+                                <option value="us">US</option>    
+                            </select>
+                        </li>
+                        <li class="bg-dark list-group-item">
+                            <label for="shape">Enter Shape</label>
+                            <select id="shape">
+                                <option value=""></option>
+                                <option value="circle">Circle</option>
+                                <option value="light">Light</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="fireball">Fireball</option>
+                                <option value="formation">Formation</option>
+                                <option value="flash">Flash</option>  
+                                <option value="sphere">Sphere</option>
+                                <option value="disk">Disk</option>
+                                <option value="rectangle">Rectangle</option>
+                                <option value="cross">Cross</option>
+                                <option value="oval">Oval</option>
+                                <option value="teardrop">Teardrop</option> 
+                                <option value="cylinder">Cylinder</option>
+                                <option value="changing">Changing</option>
+                                <option value="chevron">Chevron</option>                 
+                                <option value="unknown">Unknown</option>  
+                                <option value="other">Other</option>  
+                            </select>            
+                        </li>
+                            <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
                         </li>
                     </ul>
                 </form>
 
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -69,6 +263,9 @@
             </div>
 
         </div>
-    </div>   
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>  
 </body>
 </html>
